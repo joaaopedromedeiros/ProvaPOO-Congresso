@@ -97,8 +97,8 @@ class Congresso(Evento):
 class NumDiasError(Exception):
     def __init__(self, numDias):
         self.__numDias = numDias
-        self.__message = f'Dias invalidos: {self.__numDias}'
-        #super().__init__(self.message)
+        self.__message = f'Quantidade invalida de dias: {self.__numDias}'
+      
     
     def get_numDiaError(self):
         return self.__numDias
@@ -107,7 +107,14 @@ class NumDiasError(Exception):
         return self.__message
     
     def __str__(self):
-        return f'Quantidade invalida de dias: {self.__numDias}'
+        return self.__message
+
+class ValueError(Exception):
+    def __init__(self, nomeErrado, localErrado):
+        self.nome = nome
+        self.local = local
+        
+
     
     
 
