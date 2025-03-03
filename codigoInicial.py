@@ -109,10 +109,6 @@ class NumDiasError(Exception):
     def __str__(self):
         return self.__message
 
-class ValueError(Exception):
-    def __init__(self, nomeErrado, localErrado):
-        self.nome = nome
-        self.local = local
         
 
     
