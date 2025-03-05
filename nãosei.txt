@@ -1,0 +1,31 @@
+ def data_final(self):
+        d = timedelta(days=self.__numdias - 1)
+        return self.get_data() + d
+
+
+
+def dias(self):
+    d = timedelta(days=1)
+    x = self.get_data()
+    dias = []
+    for p in range(self.__numdias):
+        dias.append(x)
+        x = x + d
+        return dias 
+
+
+data = datetime.strptime(input("Informe a data: "), "%d/%m/%Y") !!!! Não é mm, é mm
+
+Não esquece de usar os GETS caso esteja usando atributos de uma classe PAI!!!!! na classe filha
+>>>> return f'Nome do evento: 
+"""""
+
+{self.get_nome()}, 
+Data de inicio: {self.get_data()}, 
+local: {self.get_local()}
+
+"""""""""",
+ Período de execução: {self.__numDias}, Valor: {self.__inscricao}'
+
+
+# Não sabe? Olhar todos os dias. Uma hora vai!

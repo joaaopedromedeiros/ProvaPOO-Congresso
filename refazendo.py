@@ -46,7 +46,7 @@ class NumDiasError(Exception):
         return self.__dias
 
 class Congresso(Evento):
-    def __init__(self, nome, data, local, numDias, inscricao):
+    def __init__(self, nome, data, local, numDias, inscricao): #todos precisam estar aqui
         super().__init__(nome,data,local)
         self.__numDias = numDias
         self.set_numDias(numDias) # assim que definir e passar o numDias vai conferir, na hora
@@ -91,6 +91,10 @@ class UI:
         try:
             c = Congresso(nome,data,local,dias,inscricao)
             print(c)
+
+
+            #print(f'Último dia do evento: {c.dataFinal()}')
+            #print(f'Lista de dias: {c.Dias()}')
         except NumDiasError as error:
             print("Números de dias invalidos")
             print(f'Quantidade invalida: {error.get_dias()}')
